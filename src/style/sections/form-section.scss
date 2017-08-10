@@ -1,0 +1,64 @@
+.form{
+	&-section{
+		padding: 100px 0;
+		background:#d4692d url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/form-bg.jpg)no-repeat center center;
+		background-size: cover; 
+		min-height: 839px;
+	}
+	&-field{
+		height: 60px;
+		border-radius: 3px;
+		background: #fff;
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		font-size: 16px;
+		color: #949a9f;
+		display: block;
+		width: 100%;
+		border: none;
+		margin-bottom: 21.5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&-select{
+		@extend .form-field;
+		color: #5a5c5e;
+		text-align-last:center;
+		option{
+			text-align: center;
+		}
+	}
+	input[type="text"]{
+		font-size: 16px;
+		color: #949a9f;
+	}
+	textarea{
+		background: #fff;
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+		font-size: 16px;
+		color: #949a9f;
+		display: block;
+		width: 100%;
+		border-radius: 3px;
+		padding: 17px;
+		border: none;
+	}
+	&-btn{
+	border-radius: 3px;
+	background-color: rgb(37, 45, 54);
+	width: 370px;
+	height: 60px;
+	margin: 60px auto 0 auto;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	&:hover{
+		background: #000;
+	}
+	}
+}

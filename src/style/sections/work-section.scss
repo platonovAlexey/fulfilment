@@ -1,0 +1,113 @@
+.work{
+	&-section{
+		background: #ffffff;
+		padding: 120px 0;
+	}
+	&-title{
+		font-size: 32px;
+		font-weight: bold;
+		color: #949a9f;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	&-text{
+		font-size: 16px;
+		font-weight: 300;
+		color: #949a9f;
+		margin-bottom: 0;
+		a{
+			font-size: 16px;
+			font-weight: 300;
+			color: #949a9f;
+			text-decoration: underline;
+			&:hover{
+				color: #949a9f;
+				text-decoration: none;
+			}
+		}
+	}
+	&-link{
+		font-size: 16px;
+		font-weight: 300;
+		color: #949a9f;
+		&:hover{
+			color: #949a9f;
+			text-decoration: underline;
+		}
+	}
+	&-picture{
+		position: relative;
+		display: block;
+		&__one{
+			
+			&:after{
+				content: "";
+				display: block;
+				width: 298px;
+				height: 98px;
+				background: url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/line1.png)no-repeat;
+				position: absolute;
+				bottom: -60px;
+				right: -258px;
+			}
+		}
+		&__two{
+			&:after{
+				content: "";
+				display: block;
+				width: 340px;
+				height: 72px;
+				background: url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/line2.png)no-repeat;
+				position: absolute;
+				bottom: 0px;
+				left: -330px;
+			}
+		}
+		&__three{
+			&:after{
+				content: "";
+				display: block;
+				width: 375px;
+				height: 27px;
+				background: url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/line3.png)no-repeat;
+				position: absolute;
+				bottom: -8px;
+				right: -315px;
+			}
+		}
+		&__four{
+			&:after{
+				content: "";
+				display: block;
+				width: 325px;
+				height: 73px;
+				background: url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/line4.png)no-repeat;
+				position: absolute;
+				bottom: -40px;
+				left: -280px;
+			}
+		}
+		&__five{
+			&:after{
+				content: "";
+				display: block;
+				width: 334px;
+				height: 71px;
+				background: url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/line5.png)no-repeat;
+				position: absolute;
+				bottom: -48px;
+				right: -280px;
+			}
+		}
+	}
+}
+
+.work-text-wrapper{
+	padding: 0px 0 0 0;
+}
+.work-text-wrapper-right{
+	text-align: left;
+}
+.work-text-wrapper-left{
+	text-align: right;
+}
