@@ -2,6 +2,9 @@
 	&-section{
 		background: #eceded;
 		padding: 120px 0;
+		@include MQ(xs){
+			padding: 30px 0;
+		}
 	}
 	&-item{
 		position: relative;
@@ -11,6 +14,12 @@
 		background: #fff;
 		min-height: 760px;
 		transition: all .5s;
+		@include MQ(md){
+			margin-bottom: 30px;
+		}
+		@include MQ(xs){
+			min-height: 500px;
+		}
 	}
 	&-head{
 		min-height: 220px;
@@ -19,6 +28,10 @@
 		padding: 60px 0 60px 0;
 		border-top-right-radius: 10px;
 		border-top-left-radius: 10px;
+		@include MQ(xs){
+			min-height: 120px;
+			padding: 30px 0;
+		}
 		&__title{
 			color: #f2142a;
 			font-size: 37px;
@@ -37,6 +50,15 @@
 			position: relative;
 			padding: 54px 85px 30px 85px;
 			margin: 0;
+			@include MQ(lg){
+				padding: 54px 55px 30px 55px;
+			}
+			@include MQ(sm){
+				padding: 54px 55px 50px 55px;
+			}
+			@include MQ(md){
+				padding: 20px 55px 20px;
+			}
 		}
 		&__item{
 			font-size: 18px;

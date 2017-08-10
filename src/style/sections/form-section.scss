@@ -4,6 +4,9 @@
 		background:#d4692d url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/form-bg.jpg)no-repeat center center;
 		background-size: cover; 
 		min-height: 839px;
+		@include MQ(xs){
+			padding: 50px 0;
+		}
 	}
 	&-field{
 		height: 60px;
@@ -19,6 +22,9 @@
 		margin-bottom: 21.5px;
 		&:last-child{
 			margin-bottom: 0;
+			@include MQ(sm){
+				margin-bottom: 22px;
+			}
 		}
 	}
 
@@ -57,6 +63,9 @@
 	font-weight: bold;
 	border: none;
 	cursor: pointer;
+	@include MQ(xs){
+		width: 300px;
+	}
 	&:hover{
 		background: #000;
 	}

@@ -2,6 +2,9 @@
 	&-section{
 		background: #ffffff;
 		padding: 120px 0;
+		@include MQ(xs){
+			padding: 30px 0;
+		}
 	}
 	&-title{
 		font-size: 32px;
@@ -9,12 +12,18 @@
 		color: #949a9f;
 		margin: 0;
 		margin-bottom: 30px;
+		@include MQ(xs){
+			font-size: 24px;
+		}
 	}
 	&-text{
 		font-size: 16px;
 		font-weight: 300;
 		color: #949a9f;
 		margin-bottom: 0;
+		@include MQ(md){
+			margin-bottom: 30px;
+		}
 		a{
 			font-size: 16px;
 			font-weight: 300;
@@ -38,6 +47,12 @@
 	&-picture{
 		position: relative;
 		display: block;
+		@include MQ(sm){
+				margin-bottom: 30px;
+		}
+		@include MQ(xs){
+		display: none;
+		}
 		&__one{
 			
 			&:after{
@@ -104,6 +119,10 @@
 
 .work-text-wrapper{
 	padding: 0px 0 0 0;
+	@include MQ(sm){
+		text-align: left!important;
+	}
+
 }
 .work-text-wrapper-right{
 	text-align: left;

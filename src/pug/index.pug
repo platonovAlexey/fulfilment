@@ -20,11 +20,29 @@ body
 								|Используйте логистические мощности Юлмарта для развития вашего бизнеса. Храните товары на наших складах и продавайте на витрине ulmart.ru!
 							a(href="#form-section", class="header-btn") Оставить заявку
 		section.packages-section#packages-section
+			.top-line2
+				.container
+					.row.align-items-start
+						.col-lg-3.col-md-12.col-sm-12.col-12.align-self-center.justify-content-center
+							a(class="top-line__logo" href="https://www.ulmart.ru/", target="_blank")
+								img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/ulmart-logo-red.png", alt="logo")
+							//-img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/ulmart-logo-white.png", alt="logo")
+						.col-lg-7.col-md-12.col-sm-12.col-12.offset-lg-2.align-self-center.justify-content-center
+							nav.nav2
+								ul.nav-list
+									li.nav-item
+										a(href="#packages-section", class="nav-link") Пакеты услуг
+									li.nav-item
+										a(href="#work-section", class="nav-link") Как это работает?
+									li.nav-item
+										a(href="#why-section", class="nav-link") Почему мы?
+									li.nav-item
+										a(href="#form-section", class="nav-link") Оставить заявку
 			h2.sub-title
 				|Пакеты услуг
 			.container
 				.row
-					.col-lg-4.col-md-3.col-sm-6.col-xs-12
+					.col-lg-4.col-md-6.col-sm-12.col-xs-12
 						.packages-item
 							.packages-head
 								h3.packages-head__title
@@ -47,7 +65,7 @@ body
 									li.packages-body__item.packages-body__item-disable Выдача
 									li.packages-body__item.packages-body__item-disable Возврат
 								a(href="#", class="packages-btn", id="packages-btn__one") Оставить заявку
-					.col-lg-4.col-md-3.col-sm-6.col-xs-12
+					.col-lg-4.col-md-6.col-sm-12.col-xs-12
 						.packages-item
 							.packages-head
 								h3.packages-head__title
@@ -66,7 +84,7 @@ body
 									li.packages-body__item.packages-body__item-disable Обработка
 									li.packages-body__item.packages-body__item-disable Доставка
 								a(href="#", class="packages-btn", id="packages-btn__two") Оставить заявку
-					.col-lg-4.col-md-3.col-sm-6.col-xs-12
+					.col-lg-4.col-md-6.col-sm-12.col-xs-12
 						.packages-item
 							.packages-head
 								h3.packages-head__title
@@ -165,22 +183,22 @@ body
 				|Почему мы?
 			.container
 				.row
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					.col-lg-4.col-md-4.col-sm-6.col-xs-12
 						.why-item
 							img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/why-icon1.png", alt="", class="why-img")
 							.why-title
 								|Широкое покрытие
 							.why-text
 								|6 федеральных округов, 240 городов России 
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					.col-lg-4.col-md-4.col-sm-6.col-xs-12
 						.why-item
 							img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/why-icon2.png", alt="", class="why-img")
 							.why-title
 								|Надёжные склады
 							.why-text
-								|Удобно расположенные, обогреваемые, охраняемые, от 1 м
+								|Удобно расположенные, обогреваемые, охраняемые, от 1&nbsp;м
 								sup 2
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					.col-lg-4.col-md-4.col-sm-12.col-xs-12
 						.why-item
 							img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/why-icon3.png", alt="", class="why-img")
 							.why-title
@@ -188,14 +206,14 @@ body
 							.why-text
 								|Самые низкие цены на рынке и гибкая система тарифов
 				.row
-					.offset-lg-2.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					.offset-lg-2.col-lg-4.col-md-4.col-sm-6.col-xs-12
 						.why-item
 							img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/why-icon4.png", alt="", class="why-img")
 							.why-title
 								|13,5 млн сеансов
 							.why-text
 								|540 000 уникальных клиентов в день и более 4 млн просмотров страниц в месяц
-					.col-lg-4.col-md-4.col-sm-4.col-xs-12
+					.col-lg-4.col-md-4.col-sm-6.col-xs-12
 						.why-item
 							img(src="https://fast.ulmart.ru/ns/verstka/fulfillment/img/why-icon5.png", alt="", class="why-img")
 							.why-title
@@ -212,7 +230,7 @@ body
 			form(action="https://docs.google.com/forms/d/e/1FAIpQLSeOnVPFVYkfHFtCIVCliD19vTGqcbBdFgz3lNLEsVmtbmm6-A/formResponse", class="form")
 				.container
 					.row
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-12.col-xs-12
 							select(class="form-select", name="entry.41786948")
 								option(selected="selected") Выберите пакет услуг
 								option(class="form-option form-option__one", value="Пакет 1", name="wQNmvb") Хранение
@@ -222,7 +240,7 @@ body
 							input(type="text" name="entry.1285455841" placeholder="Компания, сайт", class="form-company form-field", required)
 							input(type="number" name="entry.8165754" placeholder="Телефон", class="form-phone form-field", required)
 							input(type="text" name="entry.2053924822" placeholder="E-mail", class="form-name form-field", required)
-						.col-lg-6.col-md-6.col-sm-6.col-xs-12
+						.col-lg-6.col-md-6.col-sm-12.col-xs-12
 							textarea(name="entry.1857027863", cols="30", rows="16", class="form-textarea", placeholder="Ваше обращение")
 						input(type="submit", value="Отправить заявку" class="form-btn") 
 
