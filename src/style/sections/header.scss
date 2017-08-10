@@ -45,6 +45,10 @@
 
 .nav{
 	margin-top: 20px;
+	float: right;
+	@include MQ(sm){
+			float: none;
+		}
 	&-list{
 		position: relative;
 		margin-top: 0px;
@@ -56,6 +60,31 @@
 	&-item{
 		display: inline-block;
 		margin-right: 15px;
+		position: relative;
+		&-phone{
+			margin-left: 40px;
+			a{
+				font-weight: bold;
+				&:focus{
+					color: #fff;
+					text-decoration: underline;
+					outline:none;
+				}
+			}
+			@include MQ(xs){
+				margin-left: 0;
+			}
+			&:after{
+				content: "";
+				display: block;
+				background: url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/phone-icon.png)no-repeat;
+				width: 18px;
+				height: 18px;
+				position: absolute;
+				left: -22px;
+				top: 0;
+			}
+		}
 		@include MQ(xs){
 			display: block;
 		}
@@ -77,6 +106,12 @@
 			color: #f20d24;
 			text-decoration: underline;
 		}
+	}
+	&-span{
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 300;
+		padding: 0;
 	}
 }
 
@@ -227,12 +262,18 @@
 	z-index: 100;
 	background: #fff;
 	width: 100%;
+	display: none;
 
 	.nav2{
 		margin-top: 25px;
+		float: right;
 	}
 
 	.nav-link{
+		color: #000;
+	}
+
+	.nav-span{
 		color: #000;
 	}
 }
