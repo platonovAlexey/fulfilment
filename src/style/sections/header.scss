@@ -81,8 +81,8 @@
 				width: 18px;
 				height: 18px;
 				position: absolute;
-				left: -22px;
-				top: 0;
+				left: -25px;
+				top: 4px;
 			}
 		}
 		@include MQ(xs){
@@ -109,8 +109,8 @@
 	}
 	&-span{
 		color: #ffffff;
-		font-size: 16px;
-		font-weight: 300;
+		font-size: 20px;
+		font-weight:600;
 		padding: 0;
 	}
 }
