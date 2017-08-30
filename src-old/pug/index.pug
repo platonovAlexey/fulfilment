@@ -38,8 +38,8 @@ body
 										a(href="#why-section", class="nav-link") Почему мы?
 									li.nav-item
 										a(href="#form-section", class="nav-link") Оставить заявку
-									//- li.nav-item.nav-item-phone
-									//- 	span(href="tel:+79039609611", class="nav-span") +7 (903) 960-96-11
+									li.nav-item.nav-item-phone
+										span(href="tel:+79039609611", class="nav-span") +7 (903) 960-96-11
 			h2.sub-title
 				|Пакеты услуг
 			.container
@@ -227,36 +227,23 @@ body
 				|Оставить заявку
 			.sub-title-desc-form
 				|Для получения расчёта оставьте заявку, заполнив форму ниже. 
-				//- br
-				//- |Остались вопросы? Позвоните по номеру +7 (903) 960-96-11.
-			form(action="https://docs.google.com/forms/d/e/1FAIpQLScy-wVD59wDh1cQvBrK0eY2BYGlPId4ni_t0o4Pk9rIGmGxSQ/formResponse", class="form")
+				br
+				|Остались вопросы? Позвоните по номеру +7 (903) 960-96-11.
+			form(action="https://docs.google.com/forms/d/e/1FAIpQLSeOnVPFVYkfHFtCIVCliD19vTGqcbBdFgz3lNLEsVmtbmm6-A/formResponse", class="form")
 				.container
 					.row
 						.col-lg-6.col-md-6.col-sm-12.col-xs-12
-							select(class="form-select", name="entry.2000573808")
+							select(class="form-select", name="entry.41786948")
 								option(selected="selected") Выберите пакет услуг
-								option(class="form-option form-option__one", value="Хранение", name="wQNmvb") Хранение
-								option(class="form-option form-option__two", value="Продажа", name="wQNmvb") Продажа
-								option(class="form-option form-option__three", value="Хранение + продажа", name="wQNmvb") Хранение + продажа
-							select(class="form-select" name="entry.1879200089")
-								option(selected="selected") Размер бизнеса
-								option(value="Малый" ) Малый
-								option(value="Средний") Средний
-								option(value="Крупный") Крупный
-							select(class="form-select" name="entry.1155985772")
-								option(selected="selected") Формат бизнеса
-								option(value="Производитель" ) Производитель
-								option(value="Интернет-магазин") Интернет-магазин
-								option(value="Ретейлер/дистрибьютор") Ретейлер/дистрибьютор
-							input(type="text" name="entry.1725976695" placeholder="Отрасль компании (например электроника, детские товары)", class="form-field", required)
-
+								option(class="form-option form-option__one", value="Пакет 1", name="wQNmvb") Хранение
+								option(class="form-option form-option__two", value="Пакет 2", name="wQNmvb") Продажа
+								option(class="form-option form-option__three", value="Пакет 3", name="wQNmvb") Хранение + продажа
+							input(type="text" name="entry.1135236999" placeholder="ФИО", class="form-name form-field", required)
+							input(type="text" name="entry.1285455841" placeholder="Компания, сайт", class="form-company form-field", required)
+							input(type="number" name="entry.8165754" placeholder="Телефон", class="form-phone form-field", required)
+							input(type="text" name="entry.2053924822" placeholder="E-mail", class="form-name form-field", required)
 						.col-lg-6.col-md-6.col-sm-12.col-xs-12
-							//- textarea(name="entry.1321494543", cols="30", rows="16", class="form-textarea", placeholder="Ваше обращение")
-							input(type="text" name="entry.1456393853" placeholder="ФИО", class="form-name form-field", required)
-							input(type="text" name="entry.499397760" placeholder="Компания, сайт", class="form-company form-field", required)
-							input(type="text" name="entry.1878498355" id="phone" placeholder="Телефон", class="form-phone form-field", required)
-							input(type="text" name="entry.1150090273" placeholder="E-mail", class="form-name form-field", required)
-
+							textarea(name="entry.1857027863", cols="30", rows="16", class="form-textarea", placeholder="Ваше обращение")
 						input(type="submit", value="Отправить заявку" class="form-btn") 
 
 	#toTop

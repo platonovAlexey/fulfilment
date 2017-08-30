@@ -1,0 +1,115 @@
+.packages{
+	&-section{
+		background: #eceded;
+		padding: 120px 0;
+		@include MQ(xs){
+			padding: 30px 0;
+		}
+	}
+	&-item{
+		position: relative;
+		border-radius: 10px;
+		border:1px solid #fff;
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+		background: #fff;
+		min-height: 760px;
+		transition: all .5s;
+		@include MQ(md){
+			margin-bottom: 30px;
+		}
+		@include MQ(xs){
+			min-height: 500px;
+		}
+	}
+	&-head{
+		min-height: 220px;
+		border-bottom: 1px solid #e8e8e8;
+		text-align: center;
+		padding: 60px 0 60px 0;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+		@include MQ(xs){
+			min-height: 120px;
+			padding: 30px 0;
+		}
+		&__title{
+			color: #f2142a;
+			font-size: 37px;
+			font-weight: 300;
+		}
+		&__text{
+			color: #7c808b;
+			font-size: 18px;
+			font-weight: 300;
+		}
+	}
+	&-body{
+		padding: 0px 0 0px 0;
+		min-height: 540px;
+		&__list{
+			position: relative;
+			padding: 54px 85px 30px 85px;
+			margin: 0;
+			@include MQ(lg){
+				padding: 54px 55px 30px 55px;
+			}
+			@include MQ(sm){
+				padding: 54px 55px 50px 55px;
+			}
+			@include MQ(md){
+				padding: 20px 55px 20px;
+			}
+		}
+		&__item{
+			font-size: 18px;
+			font-weight: 300;
+			margin-bottom: 10px;
+			&-active{
+				color: #7c808b;
+				list-style-image:url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/list-style-active.png);
+			}
+			&-disable{
+				color: #d5d5d5;
+				list-style-image:url(https://fast.ulmart.ru/ns/verstka/fulfillment/img/list-style-disable.png);
+			}
+		}
+	}
+	&-btn{
+		display: block;
+		font-size: 18px;
+		font-weight: bold;
+		color: #fff;
+		line-height: 50px;
+		background: #f2142a;
+		border-radius: 3px;
+		text-align: center;
+		width: 240px;
+		height: 50px;
+		margin: 0 auto;
+		&:hover{
+			color: #fff;
+		}
+		&:focus{
+			color: #fff;
+			text-decoration: none;
+			outline: none;
+		}
+	}
+}
+
+.packages-item:hover .packages-head{
+	background: #f2142a;
+}
+
+.packages-item:hover{
+	border: 1px solid #f2142a;
+	border-radius: 10px;
+	transition: all .5s;
+}
+
+.packages-item:hover .packages-head__title{
+	color: #fff;
+}
+.packages-item:hover .packages-head__text{
+	color: #fff;
+}

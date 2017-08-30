@@ -1,0 +1,35 @@
+.why{
+	&-section{
+		position: relative;
+		background: #fafafa;
+		padding: 120px 0 60px 0;
+		@include MQ(xs){
+			padding: 30px 0;
+		}
+	}
+	&-item{
+		position: relative;
+		text-align: center;
+		padding: 0 20px;
+		margin-bottom: 60px;
+		@include MQ(sm){
+			margin-bottom: 30px;
+		}
+	}
+	&-img{
+		display: block;
+		height: 80px;
+		margin: 0 auto 20px auto;
+	}
+	&-title{
+		color: #f20d24;
+		font-weight: bold;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	&-text{
+		font-size: 16px;
+		color: #949a9f;
+		font-weight: 300;
+	}
+}

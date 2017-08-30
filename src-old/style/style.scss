@@ -1,0 +1,23 @@
+// default
+@import "helpers/normalize";
+@import "helpers/variables";
+@import "helpers/px-to-em";
+@import "helpers/bootstrap-grid";
+@import "helpers/general";
+@import "helpers/mixins";
+
+
+
+// sections
+@import "sections/header";
+@import "sections/why-section";
+@import "sections/work-section";
+@import "sections/packages-section";
+@import "sections/form-section";
+@import "sections/goods";
+@import "sections/footer";
+
+@import "helpers/media";
+
+// sprite (подключать в каждом файле, где используются иконки)
+//@import "../img/sprites/sprite";
